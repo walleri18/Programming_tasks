@@ -20,6 +20,8 @@ int main(void)
 	// Первая задача
 	one_tasks();
 
+	// Вторая задача
+	two_tasks();
 
 	return 0;
 }
