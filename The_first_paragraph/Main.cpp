@@ -18,13 +18,16 @@ int main(void)
 	setlocale(LC_ALL, ".1251");
 
 	// Первая задача
-	one_tasks();
+	//one_tasks();
 
 	// Вторая задача
-	two_tasks();
+	//two_tasks();
 
 	// Третья задача
-	three_tasks();
+	//three_tasks();
+
+	// Четвёртая задача
+	four_tasks();
 
 	return 0;
 }

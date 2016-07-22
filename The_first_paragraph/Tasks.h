@@ -12,3 +12,6 @@ void two_tasks();
 
 // Третья задача
 void three_tasks();
+
+// Четвёртая задача
+void four_tasks();

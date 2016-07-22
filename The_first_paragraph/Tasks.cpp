@@ -73,3 +73,35 @@ void three_tasks()
 		<< std::endl << "Площадь боковой поверхности: "
 		<< areaSideSurface << std::endl << std::endl;
 }
+
+// Четвёртая задача
+void four_tasks()
+{
+	// Два действительных положительных числа
+	double one_number(1), two_number(1);
+
+	// Получение данных
+	std::cout << std::endl << "Введите пожалуйста первое положительное число: ";
+	std::cin >> one_number;
+
+	std::cout << std::endl << "Введите пожалуйста второе положительное число: ";
+	std::cin >> two_number;
+
+	one_number = std::abs(one_number);
+	two_number = std::abs(two_number);
+
+	/*
+		Ответ
+	*/
+
+	// Вычисление среднего арифметического
+	double average = (one_number + two_number) / 2;
+
+	// Вычисление среднего геометрического
+	double geometricMean = std::sqrt(one_number * two_number);
+	
+	// Вывод результата
+	std::cout << std::endl << "Среднее арифметическое: "
+		<< average << std::endl << "Среднее геометрическое: "
+		<< geometricMean << std::endl << std::endl;
+}
