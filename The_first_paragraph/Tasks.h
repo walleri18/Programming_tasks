@@ -9,3 +9,6 @@ void one_tasks();
 
 // Вторая задача
 void two_tasks();
+
+// Третья задача
+void three_tasks();

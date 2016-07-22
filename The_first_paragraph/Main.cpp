@@ -23,5 +23,8 @@ int main(void)
 	// Вторая задача
 	two_tasks();
 
+	// Третья задача
+	three_tasks();
+
 	return 0;
 }
