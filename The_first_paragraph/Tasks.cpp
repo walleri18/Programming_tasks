@@ -105,3 +105,33 @@ void four_tasks()
 		<< average << std::endl << "Среднее геометрическое: "
 		<< geometricMean << std::endl << std::endl;
 }
+
+// Пятая задача
+void five_tasks()
+{
+	// Два действительных числа
+	double one_number(0), two_number(0);
+
+	// Получение данных
+	std::cout << std::endl << "Введите первое число: ";
+	std::cin >> one_number;
+
+	std::cout << std::endl << "Введите второе число: ";
+	std::cin >> two_number;
+
+	/*
+		Ответ
+	*/
+	// Вычисление среднего арифметического
+	double average = (one_number + two_number) / 2.0;
+
+	// Вычисление среднего геометрического модулей
+	double geometricMean = std::sqrt(std::abs(one_number) 
+									 * std::abs(two_number));
+
+	// Вывод результата
+	std::cout << std::endl << "Среднее арифметическое: "
+		<< average << std::endl
+		<< "Среднее геометрическое: " 
+		<< geometricMean << std::endl;
+}

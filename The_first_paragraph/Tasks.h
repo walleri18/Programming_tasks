@@ -15,3 +15,6 @@ void three_tasks();
 
 // Четвёртая задача
 void four_tasks();
+
+// Пятая задача
+void five_tasks();
