@@ -32,5 +32,8 @@ int main(void)
 	// Пятая задача
 	five_tasks();
 
+	// Шестая задача
+	six_tasks();
+
 	return 0;
 }

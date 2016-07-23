@@ -135,3 +135,39 @@ void five_tasks()
 		<< "Среднее геометрическое: " 
 		<< geometricMean << std::endl;
 }
+
+// Шестая задача
+void six_tasks()
+{
+	// Катеты прямоугольного треугольника
+	double oneCathetus(1), twoCathetus(1);
+
+	// Получение данных
+	std::cout << std::endl
+		<< "Введите первый катет прямоугольного треугольника: ";
+	std::cin >> oneCathetus;
+
+	std::cout << std::endl
+		<< "Введите второй катет прямоугольного треугольника: ";
+	std::cin >> twoCathetus;
+
+	oneCathetus = std::abs(oneCathetus);
+	twoCathetus = std::abs(twoCathetus);
+
+	/*
+		Ответ
+	*/
+	// Вычисление гипотенузы прямоугольного треугольника
+	double hypotenuse = std::sqrt(std::pow(oneCathetus, 2) 
+								  + std::pow(twoCathetus, 2));
+
+	// Вычисление площади прямоугольного треугольника
+	double area = oneCathetus * twoCathetus / 2.0;
+
+	// Вывод результата
+	std::cout << std::endl
+		<< "Гипотенуза прямоугольного треугольника: "
+		<< hypotenuse << std::endl
+		<< "Площадь прямоугольного треугольника: "
+		<< area << std::endl;
+}
