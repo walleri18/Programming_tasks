@@ -216,3 +216,31 @@ void seven_tasks()
 		<< "Температура смеси: " << temperatureMixture
 		<< std::endl;
 }
+
+// Восьмая задача
+void eight_tasks()
+{
+	// Количество углов n-угольника
+	int numberAngle(1);
+
+	// Радиус окружности вокруг которой описан n-угольник
+	double radius(1);
+
+	// Получение данных
+	std::cout << std::endl
+		<< "Введите количество углов n-угольника: ";
+	std::cin >> numberAngle;
+
+	std::cout << std::endl
+		<< "Введите радиус вокруг которой описан n-угольник: ";
+	std::cin >> radius;
+
+	// Вычисление периметра n-угольника
+	double perimeter =
+		2 * radius * numberAngle * std::sin(3.14 / numberAngle)
+		* std::cos(3.14 / numberAngle);
+
+	// Вывод результата
+	std::cout << std::endl
+		<< "Периметр n-угольника: " << perimeter << std::endl;
+}

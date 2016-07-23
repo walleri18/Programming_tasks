@@ -38,5 +38,8 @@ int main(void)
 	// Седьмая задача
 	seven_tasks();
 
+	// Восьмая задача
+	eight_tasks();
+
 	return 0;
 }
