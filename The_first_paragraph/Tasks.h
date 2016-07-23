@@ -21,3 +21,6 @@ void five_tasks();
 
 // Шестая задача
 void six_tasks();
+
+// Седьмая задача
+void seven_tasks();

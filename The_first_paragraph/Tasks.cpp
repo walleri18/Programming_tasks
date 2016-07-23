@@ -171,3 +171,48 @@ void six_tasks()
 		<< "Площадь прямоугольного треугольника: "
 		<< area << std::endl;
 }
+
+// Седьмая задача
+void seven_tasks()
+{
+	// Количество литров воды
+	double oneManyLiters(0), twoManyLiters(0);
+
+	// Температура каждого кувшина
+	double oneTemperaturePitcher(0), twoTemperaturePitcher(0);
+
+	// Получение данных
+	std::cout << std::endl
+		<< "Введите первый объём кувшина: ";
+	std::cin >> oneManyLiters;
+
+	std::cout << std::endl
+		<< "Введите второй объём кувшина: ";
+	std::cin >> twoManyLiters;
+
+	std::cout << std::endl
+		<< "Введите температуру первого кувшина: ";
+	std::cin >> oneTemperaturePitcher;
+
+	std::cout << std::endl
+		<< "Введите температуру второго кувшина: ";
+	std::cin >> twoTemperaturePitcher;
+
+	/*
+		Ответ
+	*/
+	// Вычисление объёма образовавшейся смеси
+	double volumeMixture = oneManyLiters + twoManyLiters;
+
+	// Вычисление температуры смеси
+	double temperatureMixture = 
+		(oneManyLiters * oneTemperaturePitcher + 
+		 twoManyLiters * twoTemperaturePitcher) 
+		/ volumeMixture;
+
+	// Вывод результата
+	std::cout << std::endl
+		<< "Объём смеси: " << volumeMixture << std::endl
+		<< "Температура смеси: " << temperatureMixture
+		<< std::endl;
+}
