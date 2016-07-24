@@ -44,5 +44,8 @@ int main(void)
 	// Девятая задача
 	nine_tasks();
 
+	// Десятая задача
+	ten_tasks();
+
 	return 0;
 }

@@ -30,3 +30,6 @@ void eight_tasks();
 
 // Девятая задача
 void nine_tasks();
+
+// Десятая задача
+void ten_tasks();
