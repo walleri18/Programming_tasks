@@ -244,3 +244,47 @@ void eight_tasks()
 	std::cout << std::endl
 		<< "Периметр n-угольника: " << perimeter << std::endl;
 }
+
+// Девятая задача
+void nine_tasks()
+{
+	// Сопротивление трёх резисторов
+	double oneResistance(1), twoResistance(1), 
+		threeResistance(1);
+
+	// Получение данных
+
+	do
+	{
+		std::cout << std::endl
+			<< "Введите сопротивление первого резистора: ";
+		std::cin >> oneResistance;
+	} while (oneResistance <= 0);
+
+	do
+	{
+		std::cout << std::endl
+			<< "Введите сопротивление второго резистора: ";
+		std::cin >> twoResistance;
+	} while (twoResistance <= 0);
+
+	do
+	{
+		std::cout << std::endl
+			<< "Введите сопротивление третьего резистора: ";
+		std::cin >> threeResistance;
+	} while (threeResistance <= 0);
+
+	/*
+		Ответ
+	*/
+	// Вычисление сопротивления цепи соединённых параллельно
+	double resultResistance = 1 /
+		(1 / oneResistance + 1 / twoResistance
+		 + 1 / threeResistance);
+
+	// Вывод результата
+	std::cout << std::endl
+		<< "Общее сопротивление цепи соединённых параллельно: "
+		<< resultResistance << std::endl;
+}

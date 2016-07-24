@@ -27,3 +27,6 @@ void seven_tasks();
 
 // Восьмая задача
 void eight_tasks();
+
+// Девятая задача
+void nine_tasks();
