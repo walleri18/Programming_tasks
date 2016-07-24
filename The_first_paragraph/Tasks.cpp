@@ -1,5 +1,6 @@
 #include "Tasks.h"
 #include <iostream>
+#include <math.h>
 
 // Первая задача
 void one_tasks()
@@ -313,4 +314,111 @@ void ten_tasks()
 	std::cout << std::endl
 		<< "Время падения камня с высоты " << height
 		<< "m: " << timeFall << "c" << std::endl;
+}
+
+// Одиннадцатая задача
+void eleven_tasks()
+{
+	// Функция факториала
+	long factorial(int);
+
+	// Даны x, y, z. Нужно вычислить a, b.
+	double x(0.1), y(0.1), z(0.1);
+
+	// Получение данных
+	std::cout << std::endl << "Введите X: ";
+	std::cin >> x;
+
+	std::cout << std::endl << "Введите Y: ";
+	std::cin >> y;
+
+	std::cout << std::endl << "Введите Z: ";
+	std::cin >> z;
+
+	/*
+		Ответ
+	*/
+	// Вычисление а)
+	double a = (std::sqrt(std::abs(x - 1)) - 
+				std::pow(std::abs(y), (1 / 3))) /
+		(1 + (std::pow(x, 2)) / 2 + (std::pow(y, 2)) / 4);
+
+	double b = x * (std::atan(z) + std::exp(-(x + 3)));
+
+	// Вывод а)
+	std::cout << std::endl << "а) a = " << a << "; b = " << b 
+		<< std::endl;
+
+	// Вычисление б)
+	a = (3 + std::exp(y - 1)) / (1 + (std::pow(x, 2)) *
+								 std::abs(y - std::tan(z)));
+
+	b = 1 + std::abs(y - x) + (std::pow((y - x), 2)) /
+		2 + (std::pow(std::abs(y - x), 3)) / 3;
+
+	// Вывод б)
+	std::cout << std::endl << "б) a = " << a << "; b = " << b
+		<< std::endl;
+
+	// Вычисление в)
+	a = (1 + y) * ((x + y / (std::pow(x, 2) + 4)) /
+				   (std::exp(-x - 2) + 1 / (std::pow(x, 2) 
+											+ 4)));
+
+	b = (1 + std::cos(y - 2)) / (std::pow(x, 4) / 2 
+								 + std::pow((std::sin(z)), 2));
+
+	// Вывод в)
+	std::cout << std::endl << "в) a = " << a << "; b = " << b
+		<< std::endl;
+
+	// Вычисление г)
+	a = y + x / (std::pow(y, 2) +
+				 std::abs(std::pow(x, 2) /
+						  (y + std::pow(x, 3) / 3)));
+
+	b = 1 + std::pow((std::tan(z / 2)), 2);
+
+	// Вывод г)
+	std::cout << std::endl << "г) a = " << a << "; b = " << b
+		<< std::endl;
+
+	// Вычисление д)
+	a = (2 * std::cos(x - 3.14 / 6)) /
+		(1 / 2 + std::pow(std::sin(y), 2));
+
+	b = 1 + std::pow(z, 2) / (3 + std::pow(z, 2) / 5);
+
+	// Вывод д)
+	std::cout << std::endl << "д) a = " << a << "; b = " << b
+		<< std::endl;
+
+	// Вычисление е)
+	a = (1 + std::pow(std::sin(x + y), 2)) /
+		(2 + std::abs(x - 2 * x / (1 + std::pow((x * y), 2))));
+
+	b = std::pow((std::cos(std::atan(1 / z))), 2);
+
+	// Вывод е)
+	std::cout << std::endl << "е) a = " << a << "; b = " << b
+		<< std::endl;
+
+	// Вычисление ж)
+	a = log(std::abs((y - std::sqrt(std::abs(x)))
+					 * (x - y / (z + std::pow(x, 2) / 4))));
+
+	b = x - std::pow(x, 2) / factorial(3) 
+		+ std::pow(x, 5) / factorial(5);
+
+	// Вывод ж)
+	std::cout << std::endl << "ж) a = " << a << "; b = " << b
+		<< std::endl;
+}
+
+long factorial(int value)
+{
+	if (value == 1 || value == 0)
+		return 1;
+
+	return factorial(--value) * value;
 }
